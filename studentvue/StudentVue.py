@@ -58,7 +58,7 @@ class StudentVue:
 
         self.xmljson_serializer = xmljson_serializer
         self.client = zeep.Client(
-            'https://{0}/Service/PXPCommunication.asmx?WSDL'.format(self.district_domain),
+            'https://{0}/SVUE/Service/PXPCommunication.asmx?WSDL'.format(self.district_domain),
             plugins=[UnescapingPlugin()],
             transport=zeep_transport,
             settings=zeep_settings
